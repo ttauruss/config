@@ -55,4 +55,3 @@ map <F5> :buffers<CR>:buffer<Space>
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123$,.cpp,<CR>
 map <C-j> :update<CR>:!clear<CR>:!g++ -std=c++11 -Wall -Werror -Wno-sign-compare % > /tmp/make.out 2>&1 && ./a.out<CR>
 
-colorscheme ttauruss
