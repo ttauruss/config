@@ -1,4 +1,3 @@
-alias rm='rm -i'
 alias gst='git status'
 alias ga='git add -A'
 alias eb='vim ~/.bashrc'
@@ -11,4 +10,9 @@ alias glog='git log --pretty=oneline'
 function send_attach_to_me
 {
   uuencode $1 $1 | mailx -s "$1" ttauruss@gmail.com
+}
+
+function rm
+{
+  mv $1 ~/backup
 }
