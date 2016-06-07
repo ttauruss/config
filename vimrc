@@ -32,6 +32,7 @@ set wildmenu
 set history=200
 
 au BufRead,BufNewFile *.py set ts=2 shiftwidth=2 " for python files indentation is 2 spaces
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
