@@ -6,6 +6,7 @@ alias gpull='git pull origin master'
 alias g11='g++ -std=c++11'
 alias lf='ls -lt | head -n 10'
 alias glog='git log --pretty=oneline'
+alias tr='trash-put'
 
 function send_attach_to_me
 {
@@ -14,5 +15,5 @@ function send_attach_to_me
 
 function rm
 {
-  mv $1 ~/backup
+  echo "Use trash"
 }
