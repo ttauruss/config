@@ -1,4 +1,3 @@
-alias gst='git status'
 alias ga='git add -A'
 alias eb='vim ~/.bashrc'
 alias gpush='git push origin master'
