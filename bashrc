@@ -8,6 +8,7 @@ alias lf='ls -lt | head -n 10'
 alias tr='trash-put'
 alias install='sudo apt install'
 
+# 1 - bold, 38;5;<color> - foreground color, 48;5;<color> - background color
 export PS1='\e[1;38;5;34m\u\e[m:\e[1;38;5;127m\w\e[m\n$ '
 
 function send_attach_to_me
