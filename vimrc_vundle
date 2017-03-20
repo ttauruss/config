@@ -12,6 +12,12 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 
+" :VimShell to start shell
+Plugin 'Shougo/vimshell'
+" vimshell depends on vimproc
+" after installing vimproc run 'make' in ~/.vim/bundle/vimproc
+Plugin 'Shougo/vimproc'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
