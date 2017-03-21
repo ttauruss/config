@@ -10,3 +10,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp ~/config/vimrc ~/.vimrc
 cp ~/config/vimrc_vundle ~/.vimrc_vundle
 
+cp ~/config/tmux.conf ~/.tmux.conf
+
