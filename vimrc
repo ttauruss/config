@@ -2,13 +2,17 @@
 source ~/.vimrc_vundle
 
 syntax on
+
 set hlsearch
+set ignorecase
 set smartcase
 set incsearch
 
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+colorscheme ttauruss
 
 set autoindent
 set smartindent
