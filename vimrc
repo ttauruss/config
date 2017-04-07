@@ -10,6 +10,7 @@ set incsearch
 
 set expandtab
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 
 colorscheme ttauruss
@@ -35,7 +36,7 @@ set wildmode=longest,list,full
 set wildmenu
 set history=200
 
-au BufRead,BufNewFile *.py set ts=2 shiftwidth=2 " for python files indentation is 2 spaces
+au BufRead,BufNewFile *.py set ts=2 sts=2 sw=2 " for python files indentation is 2 spaces
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 let mapleader=","
