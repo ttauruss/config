@@ -13,3 +13,4 @@ git config --global alias.prlog "log --pretty=oneline"
 git config --global alias.type "cat-file -t"
 git config --global alias.dump "cat-file -p"
 git config --global credential.helper "cache --timeout=3600"
+git config --global push.default matching
