@@ -2,13 +2,18 @@
 source ~/.vimrc_vundle
 
 syntax on
+
 set hlsearch
+set ignorecase
 set smartcase
 set incsearch
 
 set expandtab
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
+
+colorscheme ttauruss
 
 set autoindent
 set smartindent
@@ -31,7 +36,7 @@ set wildmode=longest,list,full
 set wildmenu
 set history=200
 
-au BufRead,BufNewFile *.py set ts=2 shiftwidth=2 " for python files indentation is 2 spaces
+au BufRead,BufNewFile *.py set ts=2 sts=2 sw=2 " for python files indentation is 2 spaces
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 let mapleader=","
@@ -56,3 +61,11 @@ map <F5> :buffers<CR>:buffer<Space>
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123$,.cpp,<CR>
 map <C-j> :update<CR>:!clear<CR>:!g++ -std=c++11 -Wall -Werror -Wno-sign-compare % > /tmp/make.out 2>&1 && ./a.out<CR>
 
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
