@@ -3,6 +3,9 @@ source ~/.vimrc_vundle
 
 syntax on
 
+" no bell or flash
+set vb t_vb=
+
 set hlsearch
 set ignorecase
 set smartcase
@@ -13,6 +16,7 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" use crunchbag colorscheme (I changed Normal to white)
 colorscheme ttauruss
 
 set autoindent
@@ -36,7 +40,7 @@ set wildmode=longest,list,full
 set wildmenu
 set history=200
 
-au BufRead,BufNewFile *.py set ts=2 sts=2 sw=2 " for python files indentation is 2 spaces
+au BufRead,BufNewFile *.py set ts=4 sts=4 sw=4 " for python files indentation is 2 spaces
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 let mapleader=","

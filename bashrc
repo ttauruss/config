@@ -13,7 +13,8 @@ alias tma='tmux attach-session -t'
 alias dologin="ssh tau@128.199.146.218"
 
 # 1 - bold, 38;5;<color> - foreground color, 48;5;<color> - background color
-export PS1='\e[1;38;5;34m\u\e[m:\e[1;38;5;127m\w\e[m\n$ '
+# wrap each color change in \[..\]
+export PS1='\[\e[1;38;5;34m\u\]\[\e[m\]:\[\e[1;38;5;127m\]\w\[\e[m\] $ '
 
 function send_attach_to_me
 {
