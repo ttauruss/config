@@ -1,4 +1,5 @@
 alias ls='ls --color'
+alias ll='ls -lF'
 alias ga='git add -A'
 alias eb='vim ~/.bashrc'
 alias gpush='git push origin master'
