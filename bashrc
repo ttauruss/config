@@ -1,17 +1,12 @@
 alias ls='ls --color'
 alias ll='ls -lF'
-alias ga='git add -A'
+alias lf='ls -lt | head -n 10'
 alias eb='vim ~/.bashrc'
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
-alias g11='g++ -std=c++11'
-alias lf='ls -lt | head -n 10'
 alias tr='trash-put'
-alias install='sudo apt install'
 alias tmls='tmux list-sessions'
 alias tma='tmux attach-session -t'
-
-alias dologin="ssh tau@128.199.146.218"
 
 # 1 - bold, 38;5;<color> - foreground color, 48;5;<color> - background color
 # wrap each color change in \[..\]
