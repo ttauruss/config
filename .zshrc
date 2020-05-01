@@ -1,0 +1,9 @@
+
+setopt NO_CASE_GLOB
+setopt AUTO_CD
+
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+

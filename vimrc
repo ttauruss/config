@@ -17,7 +17,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " use crunchbag colorscheme (I changed Normal to white)
-colorscheme ttauruss
+"colorscheme ttauruss
 
 set autoindent
 set smartindent
