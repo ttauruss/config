@@ -10,3 +10,12 @@ setopt HIST_IGNORE_DUPS
 alias ezsh='vim ~/config/.zshrc'
 alias ll='ls -la'
 alias lf='ls -lt | head -10'
+
+# aliases can be made global and used anywhere in the command line
+# alias -g ll='ls -la'
+# sudo ll
+
+function rm
+{
+  echo "Use trash"
+}
