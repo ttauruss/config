@@ -2,7 +2,7 @@ git config --global user.name "Sergey Olikh"
 git config --global user.email "ttauruss@gmail.com"
 git config --global core.autocrlf input
 git config --global core.safecrlf true
-git config --global core.excludesfile ~/.gitignore_global
+git config --global core.excludesfile ~/config/.gitignore_global
 git config --global core.editor vim
 git config --global alias.co checkout
 git config --global alias.ci commit
