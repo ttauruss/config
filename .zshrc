@@ -7,3 +7,7 @@ setopt SHARE_HISTORY
 setopt APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 
+setopt CORRECT
+setopt CORRECT_ALL
+
+
