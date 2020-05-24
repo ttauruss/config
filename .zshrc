@@ -10,6 +10,8 @@ setopt HIST_IGNORE_DUPS
 #setopt CORRECT
 #setopt CORRECT_ALL
 
+bindkey -v
+
 alias ezsh='vim ~/config/.zshrc'
 alias ll='ls -la'
 alias lf='ls -lt | head -10'
