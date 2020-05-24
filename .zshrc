@@ -11,6 +11,7 @@ setopt HIST_IGNORE_DUPS
 #setopt CORRECT_ALL
 
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 alias ezsh='vim ~/config/.zshrc'
 alias ll='ls -la'
