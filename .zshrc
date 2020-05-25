@@ -26,6 +26,11 @@ function rm
   echo "Use trash"
 }
 
+function python
+{
+  echo "Use python3"
+}
+
 autoload -Uz compinit && compinit
 
 PROMPT='%B%F{blue}%2/%f%b %# '
