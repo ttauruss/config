@@ -3,9 +3,12 @@ setopt NO_CASE_GLOB
 setopt AUTO_CD
 
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
-setopt SHARE_HISTORY
+#setopt SHARE_HISTORY
 setopt APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
+
+SAVEHIST=5000
+HISTSIZE=2000
 
 #setopt CORRECT
 #setopt CORRECT_ALL
@@ -16,6 +19,7 @@ bindkey '^R' history-incremental-search-backward
 alias ezsh='vim ~/config/.zshrc'
 alias ll='ls -la'
 alias lf='ls -lt | head -10'
+alias g17='g++ -std=c++17'
 
 # aliases can be made global and used anywhere in the command line
 # alias -g ll='ls -la'
