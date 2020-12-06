@@ -70,3 +70,7 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+"hi Search ctermfg=blue ctermbg=grey
+colorscheme desert
+hi MatchParen ctermbg=blue ctermfg=white
