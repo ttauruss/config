@@ -20,6 +20,7 @@ alias ezsh='vim ~/config/.zshrc'
 alias ll='ls -la'
 alias lf='ls -lt | head -10'
 alias g17='g++ -std=c++17'
+alias run='python3 ~/config/run.py'
 
 # aliases can be made global and used anywhere in the command line
 # alias -g ll='ls -la'
