@@ -13,6 +13,7 @@ print(fileName)
 
 cmd = 'g++ -std=c++17 ./' + fileName
 
-subprocess.run(['g++', '-std=c++17', fileName])
-subprocess.run(['./a.out'])
+res = subprocess.run(['g++', '-std=c++17', fileName])
+if res.returncode == 0:
+    subprocess.run(['./a.out'])
 
