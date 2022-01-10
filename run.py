@@ -2,6 +2,7 @@
 import subprocess
 import glob
 import os
+import sys
 
 def getLastModifiedFile():
     # files_in_cur_dir = os.listdir('.')
@@ -15,5 +16,5 @@ cmd = 'g++ -std=c++17 ./' + fileName
 
 res = subprocess.run(['g++', '-std=c++17', fileName])
 if res.returncode == 0:
-    subprocess.run(['./a.out'])
+    subprocess.run(['./a.out'] + sys.argv[1:])
 
